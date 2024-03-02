@@ -4,5 +4,5 @@ namespace YARSUWIKI.DAL.Interfaces;
 
 public interface IAuthorRepository : IBaseReository<Author>
 {
-    Author GetByName(string name);
+    Task<Author> GetByName(string name);
 }

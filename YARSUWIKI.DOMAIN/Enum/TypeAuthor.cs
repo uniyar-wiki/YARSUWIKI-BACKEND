@@ -7,5 +7,7 @@ public enum TypeAuthor
     [Display(Name = "Бэкэндер")]
     Backend = 0,
     [Display(Name = "Фронтэндер")]
-    Frontend = 1
+    Frontend = 1,
+    [Display(Name = "No data")]
+    NoData = 2
 }

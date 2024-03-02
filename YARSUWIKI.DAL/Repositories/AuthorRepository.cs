@@ -13,14 +13,17 @@ public class AuthorRepository : IAuthorRepository
         _db = db;
     }
 
-    public bool Create(Author entity)
+    public async Task<bool> Create(Author entity)
     {
-        throw new NotImplementedException();
+        await _db.Author.AddAsync(entity);
+        await _db.SaveChangesAsync();
+
+        return true;
     }
 
-    public Author Get(int id)
+    public async Task<Author> Get(int id)
     {
-        throw new NotImplementedException();
+        return await _db.Author.FirstOrDefaultAsync(x => x.Id == id);
     }
 
     public Task<List<Author>> Select()
@@ -30,11 +33,13 @@ public class AuthorRepository : IAuthorRepository
 
     public bool Delete(Author entity)
     {
-        throw new NotImplementedException();
+        _db.Author.Remove(entity);
+        _db.SaveChangesAsync();
+        return true;
     }
 
-    public Author GetByName(string name)
+    public async Task<Author> GetByName(string name)
     {
-        throw new NotImplementedException();
+        return await _db.Author.FirstOrDefaultAsync(x => x.Name == name);
     }
 }

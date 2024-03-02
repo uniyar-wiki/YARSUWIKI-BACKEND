@@ -9,17 +9,14 @@ namespace YARSUWIKI.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private readonly IAuthorRepository _authorRepository;
-
-    public HomeController(ILogger<HomeController> logger, IAuthorRepository authorRepository)
+    
+    public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
-        _authorRepository = authorRepository;
     }
 
     public async Task<IActionResult> Index()
     {
-        var response = await _authorRepository.Select();
         return View();
     }
 

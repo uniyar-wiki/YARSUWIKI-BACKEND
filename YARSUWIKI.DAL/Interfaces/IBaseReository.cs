@@ -5,9 +5,9 @@ namespace YARSUWIKI.DAL.Interfaces;
 public interface IBaseReository<T>
 {
     
-    bool Create(T entity);
+    Task<bool> Create(T entity);
 
-    T Get(int id);
+    Task<Author> Get(int id);
 
     Task<List<Author>> Select();
 
