@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using YARSUWIKI.DAL.Interfaces;
 using YARSUWIKI.DOMAIN.Entity;
 using YARSUWIKI.Models;
 
@@ -8,20 +9,18 @@ namespace YARSUWIKI.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IAuthorRepository _authorRepository;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IAuthorRepository authorRepository)
     {
         _logger = logger;
+        _authorRepository = authorRepository;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        Author author = new Author()
-        {
-            Name = "Никита",
-            Description = "Хуесос"
-        };
-        return View(author);
+        var response = await _authorRepository.Select();
+        return View();
     }
 
     public IActionResult Privacy()
