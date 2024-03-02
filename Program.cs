@@ -1,6 +1,10 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using YARSUWIKI.DAL;
 using YARSUWIKI.DAL.Interfaces;
 using YARSUWIKI.DAL.Repositories;
+using YARSUWIKI.DOMAIN.Entity;
+using YARSUWIKI.SERVICE.Implementations;
+using YARSUWIKI.SERVICE.Interfaces;
 
 namespace YARSUWIKI;
 using Microsoft.AspNetCore.Hosting;
@@ -14,7 +18,22 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllersWithViews();
-        services.AddScoped<IAuthorRepository, AuthorRepository>();
+        services.AddScoped<IBaseRepository<User>, UserRepository>();
+        services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IAccountService, AccountService>();
+        services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+                options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/auth/login");
+                options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/auth/login");
+            });
+        services.AddControllers(options =>
+        {
+            var jsonInputFormater = options.InputFormatters
+                .OfType<Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter>()
+                .Single();
+            jsonInputFormater.SupportedMediaTypes.Add("application/csp-report");
+        });
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -34,7 +53,11 @@ public class Startup
 
         app.UseRouting();
 
+        app.UseRouting();
+
+        app.UseAuthentication();
         app.UseAuthorization();
+        
 
         app.UseEndpoints(endpoints =>
         {
@@ -78,6 +101,7 @@ public class Program
             Database = "yarsuwiki",
             Pooling = true,
         };
+        
 
         return builder.ConnectionString;
     }
