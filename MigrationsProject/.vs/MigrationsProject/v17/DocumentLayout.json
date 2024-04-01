@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\defau\\Desktop\\YARSUWIKI-BACKEND-dddosha341-backend\\Migrations\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA2DA5E5-C70F-4037-B534-0EE7F0D68E45}|Migrations\\MigrationsProject.csproj|c:\\users\\defau\\desktop\\yarsuwiki-backend-dddosha341-backend\\migrations\\migrations\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA2DA5E5-C70F-4037-B534-0EE7F0D68E45}|Migrations\\MigrationsProject.csproj|solutionrelative:migrations\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\defau\\Desktop\\YARSUWIKI-BACKEND-dddosha341-backend\\Migrations\\Migrations\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\defau\\Desktop\\YARSUWIKI-BACKEND-dddosha341-backend\\Migrations\\Migrations\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T16:02:32.843Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
