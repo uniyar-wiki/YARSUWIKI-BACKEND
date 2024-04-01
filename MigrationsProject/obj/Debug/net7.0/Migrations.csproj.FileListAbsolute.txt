@@ -1,0 +1,11 @@
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\bin\Debug\net7.0\Migrations.deps.json
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\bin\Debug\net7.0\Migrations.dll
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\bin\Debug\net7.0\Migrations.pdb
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\Migrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\Migrations.AssemblyInfoInputs.cache
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\Migrations.AssemblyInfo.cs
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\Migrations.csproj.CoreCompileInputs.cache
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\Migrations.dll
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\refint\Migrations.dll
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\Migrations.pdb
+C:\Users\defau\Desktop\YARSUWIKI-BACKEND-dddosha341-backend\Migrations\Migrations\Migrations\obj\Debug\net7.0\ref\Migrations.dll
